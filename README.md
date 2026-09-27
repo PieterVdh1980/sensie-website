@@ -1,23 +1,19 @@
 # Sensie website
 
-**Nieuwe website:** [sensie-vernieuwd.pieter-vdh.chatgpt.site](https://sensie-vernieuwd.pieter-vdh.chatgpt.site/) (momenteel alleen toegankelijk voor de eigenaar).
+**[Open de nieuwe Sensie-site](https://pietervdh1980.github.io/sensie-website/)**
 
-**GitHub-repository:** [PieterVdh1980/sensie-website](https://github.com/PieterVdh1980/sensie-website).
+Dit GitHub-adres toont de broncode. De werkende website staat op de GitHub Pages-link hierboven.
 
-De broncode van de nieuwe Sensie-website. De site bestaat uit zeven statische pagina's in het Nederlands.
+De website bestaat uit zeven gewone HTML-pagina's met CSS. Python werd alleen gebruikt om de eerste HTML-versie te maken. Je hebt geen Python nodig om de website te openen of via GitHub Pages te publiceren. De oude scripts `build.py` en `check.py` worden niet door de gepubliceerde site gebruikt.
 
-## Lokaal bouwen
+## Pagina's
 
-Python 3 is voldoende; er zijn geen externe Python-pakketten nodig.
+- [Home](index.html)
+- [Individuele begeleiding](individuele-begeleiding.html)
+- [Relaties en seksualiteit](relaties-seksualiteit.html)
+- [Hypnotherapie](hypnotherapie.html)
+- [Groepen en agenda](groepen-agenda.html)
+- [Over Sensie](over-sensie.html)
+- [Praktisch en contact](praktisch-contact.html)
 
-```sh
-python build.py
-python check.py
-python -m http.server 8787 --directory dist
-```
-
-Open daarna `http://localhost:8787`.
-
-`build.py` genereert de publiceerbare website in `dist/`. Bewerk de teksten in `build.py`, de vormgeving in `styles.css` en de beelden in `practice.webp` en `team.webp`.
-
-De knop voor online afspraken verwijst momenteel naar het afsprakensysteem op [sensie.be](https://www.sensie.be/#Afspraak-maken). Pas die link aan als het domein of afsprakensysteem verhuist. De agenda en tarieven zijn overgenomen van de bestaande site en moeten actueel gehouden worden. Het praktijkbeeld is een sfeerbeeld; de teamfoto komt van de bestaande site.
+De afsprakenknop verwijst momenteel naar het bestaande systeem op [sensie.be](https://www.sensie.be/#Afspraak-maken). De agenda en tarieven moeten actueel gehouden worden. Deze statische versie heeft nog geen WordPress-achtige beheeromgeving.
